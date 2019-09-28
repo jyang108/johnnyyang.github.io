@@ -1,13 +1,24 @@
+body {
+    color: #777777;
+}
 #navname {
     background-color: #4aaaa5;
     color: #ffffff;
     text-align: center;
-    padding: 10px;
     margin-left: 15%;
 }
 
-#navbarNav {
-    margin-left: 40%;
+main {
+    background-color: #ffffff;
+    width: 960px;
 }
 
+
+
+@media only screen and (min-width: 992px) {
+    #navbarNav {
+        margin-left: 40%;
+    }
+    
+  }
 
