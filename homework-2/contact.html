@@ -33,31 +33,42 @@
 
         </header>
 
-        <main>
+        <main class="container border mt-5">
 
-            <section>
+            <section class="col-md-12 border-bottom mb-5 mt-5">
                 <h2>Contact</h2>
             </section>
 
             <form>
-                <p>Name</p>
-                <input type="text"><br>
-                <p>Email</p>
-                <input type="text"><br>
-                <p>Mesage</p>
-                <textarea></textarea><br>
 
-                <button>Submit</button>
+              <div class="form-group">
+                  <label for="exampleFormControlSelect1">Name</label>
+                  <input type="name" class="form-control" placeholder="John Doe">
+              </div>
+
+              <div class="form-group">
+                  <label for="exampleFormControlInput1">Email address</label>
+                  <input type="email" class="form-control" placeholder="name@example.com">
+              </div>
+
+              <div class="form-group">
+                  <label for="exampleFormControlTextarea1">Message</label>
+                  <textarea class="form-control" rows="10" placeholder="Write your message here... "></textarea>
+              </div>
+
+              <button type="button" class="btn btn-secondary">Submit</button>              
+
             </form>
 
 
         
         </main>
 
-        <footer>
+        <footer id="footer" class="bg-dark">
+            <div class="container">
+                <h3 class="text-muted">THIS IS A FOOTER</h3>
 
-
-
+            </div>
         </footer>
 
         
