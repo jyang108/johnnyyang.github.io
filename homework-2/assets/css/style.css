@@ -40,6 +40,20 @@ img {
     height: 60px;
     background-color: #f5f5f5;
   }
+
+  .img-thumbnail {
+    height: 17rem;
+  }
+
+  .caption {
+    height: 5rem;
+    position: relative;
+    bottom: 50px;
+    color: #ffffff;
+    background-color: #4aaaa5;
+  }
+
+  
   
   
 
@@ -50,4 +64,11 @@ img {
     }
     
   }
+
+@media only screen and (max-width: 768px) {
+    .nav-item {
+        border-style: none;
+    }
+    
+}
 
