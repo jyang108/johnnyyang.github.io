@@ -5,8 +5,11 @@ main {
     /* background-color: #aaaaaa; */
 }
 
-h1, p {
+body{
     color: #ffffff;
+}
+
+h1, p, h4 {
     text-align: center;
     padding: 2rem;
 
@@ -17,7 +20,9 @@ h1 {
     border-bottom-width: 1px;
 }
 
-
+hr {
+    background-color: #ffffff;
+}
 
 @media screen and (max-width: 992px) {
     main {
