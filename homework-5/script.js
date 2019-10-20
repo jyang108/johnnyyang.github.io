@@ -9,8 +9,9 @@ $("#currentTime").text(currentTime)
 
 console.log(currentHour);
 
+
 //set variables for time and hour
-var time = ["9 AM", "10 AM", "11 AM", "12 PM", "1 PM", "2 PM", "3 PM", "4 PM", "5 AM"];
+var time = ["9 AM", "10 AM", "11 AM", "12 PM", "1 PM", "2 PM", "3 PM", "4 PM", "5 PM"];
 //hour used for comparing currentHour to div for styling
 var hour = [9, 10, 11, 12, 13, 14, 15, 16, 17]
 
@@ -23,28 +24,30 @@ for(var i = 0; i < time.length; i++) {
     var divBtn = $("<button class='saveBtn col-md-1'>")
     var saveIcon = $("<i class='fas fa-save'></i>");
 
-    var data = divText.attr("data-hour", hour[i]);
+    
     divTime.text(time[i]);
     divRow.attr("id", time[i]);
     divText.attr("id", hour[i]);
     
-
     $("#timeblocks").append(divRow);
     divRow.append(divTime);
     divRow.append(divText);
     divRow.append(divBtn);
     divBtn.append(saveIcon);
-    
+
     //comparing data attr with currentHour to determine past, present, or future styling
-    if (data == currentHour) {
-        divText.attr("class", "present col-md-10");
-    } else if (data > currentHour){
-        divText.attr("class", "future col-md-10")
+    var divTextId = parseInt($(divText).attr("id"));
+    if (divTextId < currentHour) {
+        $("textarea").attr("class", "past col-md-10");    
+    } else if (divTextId > currentHour){
+        divText.attr("class", "future col-md-10")   
     } else {
-        divText.attr("class", "past col-md-10")
-    }
+        divText.attr("class", "present col-md-10")
+         
+    };
 
 };
+
 
 //function to show text in saved textarea timeslots
 function render (){

@@ -50,13 +50,13 @@ textarea{
 }
 
 .present {
-  border-left: 3px solid #77dd77;
-  background-color: #e2e2e2;  
+  border-left: 3px solid #61ffe5;
+  background-color: #e0fffa;  
 }
 
 .future {
-  border-left: 3px solid #61ffe5;
-  background-color: #e2e2e2;
+  border-left: 3px solid #77dd77;
+  background-color: #e8ffe8;
 }
 
 .past:hover {
@@ -64,11 +64,11 @@ textarea{
   transition: all .5s ease-in-out;
 }
 .present:hover {
-  border-left: 7px solid #77dd77;
+  border-left: 7px solid #61ffe5;
   transition: all .5s ease-in-out;
 }
 .future:hover {
-  border-left: 7px solid #61ffe5;
+  border-left: 7px solid #77dd77;
   transition: all .5s ease-in-out;
 }
 
