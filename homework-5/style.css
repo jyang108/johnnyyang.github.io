@@ -84,3 +84,13 @@ textarea{
   font-size: 25px;
   transition: all .3s ease-in-out;
 }
+
+@media only screen and (max-width: 766px) {
+.time-block {
+  margin-top: 3rem;
+}
+#clearBtn {
+  margin-top: 2rem;
+}
+
+}
