@@ -55,11 +55,11 @@ function render (){
     $("#10").text(localStorage.getItem("10 AM"));
     $("#11").text(localStorage.getItem("11 AM"));
     $("#12").text(localStorage.getItem("12 PM"));
-    $("#1").text(localStorage.getItem("1 PM"));
-    $("#2").text(localStorage.getItem("2 PM"));
-    $("#3").text(localStorage.getItem("3 PM"));
-    $("#4").text(localStorage.getItem("4 PM"));
-    $("#5").text(localStorage.getItem("5 PM"));
+    $("#13").text(localStorage.getItem("1 PM"));
+    $("#14").text(localStorage.getItem("2 PM"));
+    $("#15").text(localStorage.getItem("3 PM"));
+    $("#16").text(localStorage.getItem("4 PM"));
+    $("#17").text(localStorage.getItem("5 PM"));
 };
 
 //onclick event that saves textarea values as parent Id keys
